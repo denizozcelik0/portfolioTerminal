@@ -57,11 +57,18 @@ ExecuteCommand(){
         "banner")
             BannerCommandExecuted                                    
         ;;
+        "date")
+            DateCommandExecuted
+        ;;    
         
         *)
             NotFoundCommand
         ;;
     esac
+}
+
+DateCommandExecuted(){
+    date
 }
 
 BannerCommandExecuted(){
@@ -151,6 +158,7 @@ HelpCommandExecuted(){
     echo "  history      View command history"
     echo "  email        You can ask me everything"
     echo "  clear        Fix the pollution"
+    echo "  date         Check the matrix time flow."
     echo "  banner       Display my amazing banner. Get ready for ASCII art!"
     echo "  help         You obviously know what is does."
     echo "                                                                     "
