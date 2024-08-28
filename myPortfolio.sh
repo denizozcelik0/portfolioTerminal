@@ -85,7 +85,7 @@ HistoryCommandExecuted(){
     echo "                                                                     "
     echo " Command History:"
     for cmd in "${commands[@]}"; do
-        echo "$cmd"
+        echo "  $cmd"
     done
     echo "                                                                     "
 }
@@ -99,6 +99,8 @@ SkillsCommandExecuted(){
     echo " --## ###           ##"
     echo " JavaScript"
     echo " --## ###           ##"
+    echo " Python"
+    echo " --## #             ##"
     echo " Assembly"
     echo " --##               ##"
     echo " Go"
